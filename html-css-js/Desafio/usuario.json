@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "user": "Master",
+      "pws": "12345"
+    },
+    {
+      "user": "Marcelo",
+      "pws": "senha"
+    },
+    {
+      "user": "Lucas",
+      "pws": "bootcamp"
+    }
+  ]
+}

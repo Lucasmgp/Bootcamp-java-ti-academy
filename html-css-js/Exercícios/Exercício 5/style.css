@@ -1,0 +1,6 @@
+header, main, footer{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black;
+}

@@ -1,0 +1,13 @@
+header, main, footer{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    height: 50px;
+}
+
+p{
+    width: 100%;
+    height: auto;
+}

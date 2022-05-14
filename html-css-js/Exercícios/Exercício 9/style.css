@@ -1,0 +1,11 @@
+header{
+    background-color: #fa8072;
+    width: 50%;
+    margin: 0 auto;
+    height: 250px;
+    border: 1px solid #000;
+}
+article{
+    border: 1px solid #008000;
+    width: 150  px;
+}

@@ -1,0 +1,18 @@
+main, header, footer{
+    margin: auto;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+}
+
+main{
+    border: 1px dotted black;
+}
+
+header{
+    border: 1px solid black;
+}
+
+footer{
+    border: 1px double black;
+}

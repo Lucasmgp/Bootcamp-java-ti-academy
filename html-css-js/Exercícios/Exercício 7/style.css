@@ -1,0 +1,25 @@
+/* body{ */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: red; */
+/* } */
+header, main, footer{
+    width: 80%;
+    margin:0 auto;
+}
+header{
+    height: auto;
+    border: 1px solid black;
+}
+p{
+    width: 100%;
+    height: auto;
+}
+footer{
+    background-color: black;
+    color:white
+}
