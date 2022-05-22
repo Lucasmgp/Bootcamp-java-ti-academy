@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .desaparecer{
-    display: none;
+    display: none !important;
 }
 body{
     display: flex;
@@ -15,13 +15,13 @@ main{
     height: auto;
     display: flex;
     justify-content: center;
-    border-top: 3px solid silver ;
+    border-top: 3px solid #c0c0c0;
     padding-top: 20px ;
 }
-.lista_lateral{
+#lista_lateral{
     width: 15%;
-    border-right: 2px solid silver ;
-    border-top: 3px solid silver ;
+    border-right: 2px solid #c0c0c0 ;
+    border-top: 3px solid #c0c0c0 ;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,47 +29,45 @@ main{
 a{
     cursor: pointer;
 }
-.cliente, .produto, .pedido, .sair{
+#cliente, #produto, #pedido, #sair{
     text-decoration: none;    
     padding-bottom: 3px;
     padding-top: 3px;
-    color: black;
+    color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
-.sair{
-    color:red;
-    width: 3%;
-    padding: 5px;
-    position: absolute;
+#sair{
+    color:#ff0000;
+    padding-right: 5px;
+    position:fixed;
     bottom: 5px;
-    left: 155px;
 }
 .botoes_menu:hover{
     text-decoration: none;    
     padding-bottom: 3px;
     padding-top: 3px;
-    color: black;
+    color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;    
-    background-color: #0ff;
+    background-color: #666;
     transition: 0.5s;
 }
-/* PANEL CLIENTES -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
-.aba_cliente{
+/* PAINEL CLIENTES */
+#aba_cliente{
     width: 40%;
     height: auto;
-    border: 2px solid silver ;
+    border: 2px solid #c0c0c0;
     padding: 20px;
     padding-bottom: 50px;
 }
-.client_title{
+#client_title{
     font-size: 1.5em;
 }
 #nome_cliente{
     font-weight: bold;
 }
-#cadastro_cliente{
+#data_cliente{
     font-weight: bold;
 }
 input{
@@ -83,10 +81,10 @@ label{
 }
 .fechar{
     font-size: 1.5em;
-    color: red;
+    color: #ff0000;
     cursor: pointer;
 }
-/* BOTÕES CLIENTE --------------------------------------------------------------------- */
+/* BOTÕES CLIENTE */
 .alin-x{
     display:flex ;
     margin-bottom: 50px;
@@ -109,7 +107,7 @@ label{
 }
 #botao_salvar{
     margin-left: 10px;
-    background-color: green;
+    background-color: #008000;
 }
 #botao_novo{
     background-color: #3D5AFE;
@@ -118,14 +116,14 @@ label{
     height: 30px;
 }
 .botoes_novo_salvar{
-    color: white;
+    color: #fff;
     border-radius: 5px;
     border: 0;
     cursor:pointer ;
 }
 .botao_ir_vir{
-    color: white;
-    background-color: blueviolet;
+    color: #fff;
+    background-color: #8a2be2;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
@@ -137,13 +135,13 @@ label{
     width: 100%;
     height: 10px;
 }
-/* BOTÕES CLIENTE --------------------------------------------------------------------- */
-/* FIM PANEL CLIENTE =-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
-/* PANEL PRODUTOS =-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=- */
+/* BOTÕES CLIENTE */
+/* FIM PAINEL CLIENTE */
+/* PAINEL PRODUTOS */
 #aba_prod{
     width: 40%;
     height: auto;
-    border: 2px solid silver ;
+    border: 2px solid #c0c0c0;
     padding: 20px;
     padding-bottom: 50px;
 }
@@ -157,7 +155,7 @@ label{
     font-weight: bold;
     font-size: 20px;
 }
-/* BOTÕES PRODUTO --------------------------------------------------------------------- */
+/* BOTÕES PRODUTO */
 #maior-menor_prod{
     width: 30%;
     display: flex;
@@ -174,7 +172,7 @@ label{
 }
 #botao_salvar_prod{
     margin-left: 10px;
-    background-color: green;
+    background-color: #008000;
 }
 #botao_novo_prod{
     background-color: #3D5AFE;
@@ -183,14 +181,14 @@ label{
     height: 30px;
 }
 .botoes_novo_salvar{
-    color: white;
+    color: #fff;
     border-radius: 5px;
     border: 0;
     cursor:pointer ;
 }
 .botao_ir_vir{
-    color: white;
-    background-color: blueviolet;
+    color: #fff;
+    background-color: #8a2be2;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
@@ -202,19 +200,19 @@ label{
     width: 100%;
     height: 10px;
 }
-/* FIM PANEL PRODUTOS =-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
-/* PANEL PEDIDOS =-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=- */
+/* FIM PAINEL PRODUTOS */
+/* PAINEL PEDIDOS */
 #aba_ped{
     width: 70%;
     height: auto;
-    border: 2px solid silver ;
+    border: 2px solid #c0c0c0;
     padding: 20px;
     padding-bottom: 30px;
 }
 #pedido_title{
     font-size: 1.5em;
 }
-/* BOTOES PEDIDOS  --------------------------------------------------------------------- */
+/* BOTOES PEDIDOS */
 #maior-menor{
     width: 30%;
     display: flex;
@@ -231,7 +229,7 @@ label{
 }
 #botao_salvar{
     margin-left: 10px;
-    background-color: green;
+    background-color: #008000;
 }
 #botao_novo{
     background-color: #3D5AFE;
@@ -267,16 +265,16 @@ label{
 .borda_localiza{
     margin-top: 3%;
     margin-bottom: 2%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 .font_azul{
-    color: rgb(85, 85, 255);
+    color: #5555ff;
     font-size: 18px;
 }
 .cabeca_tabela{
     width: 100%;
-    padding-left:500px ;
+        padding-left:500px ;
     font-size: 16px;
     padding-right: 10%;
 }
@@ -294,7 +292,51 @@ label{
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    color: red;
+    color: #ff0000;
     background-color: rgba(128, 128, 128, 0.434);
     padding: 5px;
+}
+.filtro_escuro{
+    filter: brightness(0.2);
+    background-color: rgba(0, 0, 0, 0.805);
+}
+/* Css Tratamento de erro */
+#quadrado-erro{
+    background-color: #fff;
+    width: 30%;
+    height: 15%;
+    font-family: var(--fontes);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    padding-left: 10px;
+    border: 0;
+    position: absolute;
+    right: 27%;
+    bottom: 60%;
+    filter: none;
+    margin: 0 auto;
+}
+#fala-erro{
+    padding-right: 10%;
+}
+#espaco{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#btn_ok{
+    width: 15%;
+    height: 65%;
+    background-color: #2195f3;
+    color: #fff;
+    font-family: var(--fontes);
+    border: 0;
+    border-radius: 10px;
+    align-items: flex-end;  
+    cursor: pointer;  
 }
